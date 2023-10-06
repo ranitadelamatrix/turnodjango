@@ -20,3 +20,9 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+#importar vistas de turnos
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+]
